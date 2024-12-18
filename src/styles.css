@@ -11,15 +11,21 @@ body {
 }
 
 body {
+  width: 90vw;
+  
   background: url("assets/background.jpg")
     no-repeat center center fixed;
   background-size: cover;
   font-family: "Open Sans", sans-serif;
-  color:white;
+  color:rgb(0, 0, 0);
 }
 
 body {
   padding: 15px;
+}
+
+#chart{
+  width: 50vw;;
 }
 
 ul {
@@ -32,7 +38,7 @@ a {
 
 .navbar {
   padding: 20px 10px;
-  width: 20vw;
+  width: 90vw;
   backdrop-filter: blur(15px);
   box-shadow: 0px 0px 20px rgba(227, 228, 237, 0.35);
   border: 2px solid rgba(255, 255, 255, 0.18);
@@ -42,8 +48,6 @@ a {
 .container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 25px;
 }
 
@@ -54,16 +58,16 @@ a {
 
 .menu {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row-reverse;
   align-items: center;
   flex: 2;
 }
 
 .menu-link {
+  margin-left: 5vw;
   font-weight: 600;
   color: #f2f2f2;
   font-size: 16px;
-  width: calc(100% / 5);
   border-radius: 5px;
   transition: color 0.3s ease;
 }
